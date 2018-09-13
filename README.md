@@ -6,8 +6,8 @@ This application using Image Cropping Library for Android, optimized for Camera 
 <img src="Screenshot/Screenshot_20180913-154741_Android Camera.jpg" width="250" height="444">         <img src="Screenshot/Screenshot_20180913-154814_Android System.jpg" width="250" height="444">         <img src="Screenshot/Screenshot_20180913-154844_Android Camera.jpg" width="250" height="444">         <img src="Screenshot/Screenshot_20180913-154851_Android Camera.jpg" width="250" height="444">
 </pre>
 
-### Petunjuk menjalankan source code aplikasi
-Untuk menjalankan source code aplikasi ini, memasukkan repositories ***maven {}*** dan ***mavenCentral()*** ke dalam file ***build.gradle*** project
+### Instructions for running the application source code
+Add ***maven {}*** and ***mavenCentral()*** into file ***build.gradle*** project
 
 ```
 allprojects {
@@ -20,13 +20,11 @@ allprojects {
 }
 ```
 
-Import library pada file ***build.gradle*** Module: app didalam **dependencies** 
+Import library into file ***build.gradle*** module: app 
 
 ```
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    ....
-    //add liblary
+    .....
     implementation 'com.jakewharton:butterknife:8.8.1'
 
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
@@ -37,14 +35,14 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 }
 ```
-Kemudian tambahkan permission pada file ***AndroidManifest.xml***
+Add permission into file ***AndroidManifest.xml***
 
 ```
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-Terakhir, tambahkan activity ***CropImageActivity*** pada file ***AndroidManifest.xml*** didalam tag **application**
+Last, add activity ***CropImageActivity*** into file ***AndroidManifest.xml***
 
 ```
 <application
@@ -61,5 +59,4 @@ Terakhir, tambahkan activity ***CropImageActivity*** pada file ***AndroidManifes
 
 * **R Rifa Fauzi Komara**
 
-Jangan lupa untuk follow dan ★
-
+Don't forget to follow and give me ★
