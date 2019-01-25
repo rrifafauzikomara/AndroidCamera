@@ -55,6 +55,9 @@ Last, add activity ***CropImageActivity*** into file ***AndroidManifest.xml***
     </application>
 ```
 
+### References
+<a href="https://github.com/jkwiecien/EasyImage">Here</a>
+
 ## Author
 
 * **R Rifa Fauzi Komara**
